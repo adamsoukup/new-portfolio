@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
 svgSprite = require('gulp-svg-sprite'),
-rename = require('gulp-rename')
+rename = require('gulp-rename'),
 del = require('del');
 
 var config = {
@@ -17,7 +17,7 @@ var config = {
 }
 
 gulp.task('beginClean', function() {
-  return del(['./app/temp/sprite', './app/assets/images/sprites'])
+  return del(['./app/temp/sprite', './app/assets/images/sprites']);
 });
 
 gulp.task('createSprite', ['beginClean'], function() {

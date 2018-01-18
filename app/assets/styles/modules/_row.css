@@ -14,13 +14,10 @@
     margin-right: -100px;
   }
 
-<<<<<<< HEAD
   &--gutters-small {
     margin-right: -45px;
   }
 
-=======
->>>>>>> our-features
   &--gutters > div {
     padding-right: 65px;
   }
@@ -29,13 +26,10 @@
     padding-right: 100px;
   }
 
-<<<<<<< HEAD
   &--gutters-small > div {
     padding-right: 45px;
   }
 
-=======
->>>>>>> our-features
   &__b-margin-until-medium {
     margin-bottom: 1rem;
   }
@@ -59,11 +53,6 @@
       float: left;
       width: 50%;
     }
-<<<<<<< HEAD
-=======
-
-    &__medium-8 {
->>>>>>> our-features
 
     &__medium-8 {
       float: left;
@@ -106,7 +95,7 @@
     }
 
   }
-
+  
   /* Begin Equal Height Rules */
   &--equal-height-at-medium {
     @mixin atMedium {

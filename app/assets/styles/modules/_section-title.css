@@ -11,29 +11,24 @@
     font-weight: 500;
   }
 
-<<<<<<< HEAD
   &--blue {
     color: $mainBlue;
   }
 
-=======
->>>>>>> our-features
   &__icon {
-    margin-bottom: .6rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: .6rem;
 
     @mixin atSmall {
-<<<<<<< HEAD
       position: relative;
       top: 8px;
-=======
->>>>>>> our-features
-      margin-right: 1rem;
+      margin-right: .5rem;
       margin-left: 0;
       margin-bottom: 0;
       display: inline-block;
     }
   }
+
 }
