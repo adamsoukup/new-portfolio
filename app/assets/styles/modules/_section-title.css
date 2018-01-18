@@ -11,10 +11,13 @@
     font-weight: 500;
   }
 
+<<<<<<< HEAD
   &--blue {
     color: $mainBlue;
   }
 
+=======
+>>>>>>> our-features
   &__icon {
     margin-bottom: .6rem;
     display: block;
@@ -22,8 +25,11 @@
     margin-right: auto;
 
     @mixin atSmall {
+<<<<<<< HEAD
       position: relative;
       top: 8px;
+=======
+>>>>>>> our-features
       margin-right: 1rem;
       margin-left: 0;
       margin-bottom: 0;
