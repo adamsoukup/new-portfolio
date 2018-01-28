@@ -38,6 +38,13 @@
     text-shadow: 2px 1px 5px #000;
     display: block;
     padding: 12px 0;
+
+    @mixin atMedium {
+
+      &.is-current-link {
+        color: orange;
+      }
+    }
   }
 
   a:hover {
