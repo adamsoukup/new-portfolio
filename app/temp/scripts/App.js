@@ -11272,7 +11272,7 @@ var StickyHeader = function () {
     this.createHeaderWaypoint();
     this.pageSections = (0, _jquery2.default)(".page-section");
     this.headerLinks = (0, _jquery2.default)(".primary-nav a");
-    this.createPageSectionWaypoints();
+    //this.createPageSectionWaypoints();
     this.addSmoothScrolling();
     this.refreshWaypoints();
   }
@@ -11304,37 +11304,45 @@ var StickyHeader = function () {
         }
       });
     }
-  }, {
-    key: 'createPageSectionWaypoints',
-    value: function createPageSectionWaypoints() {
+
+    /*createPageSectionWaypoints() {
       var that = this;
-      this.pageSections.each(function () {
+      this.pageSections.each(function() {
         var currentPageSection = this;
-        new Waypoint({
+         new Waypoint({
           element: currentPageSection,
-          handler: function handler(direction) {
+          handler: function(direction) {
             if (direction == "down") {
               var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
               that.headerLinks.removeClass("is-current-link");
-              (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+              $(matchingHeaderLink).addClass("is-current-link");
             }
           },
           offset: "18%"
         });
-
-        new Waypoint({
+         new Waypoint({
           element: currentPageSection,
-          handler: function handler(direction) {
+          handler: function(direction) {
             if (direction == "up") {
               var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
               that.headerLinks.removeClass("is-current-link");
-              (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+              $(matchingHeaderLink).addClass("is-current-link");
             }
           },
           offset: "-40%"
         });
-      });
-    }
+         new Waypoint({
+          element: currentPageSection,
+          handler: function(scrollTop) {
+            if (scrollTop == "0") {
+              var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
+              that.headerLinks.removeClass("is-current-link");
+            }
+          }
+        });
+       });
+    } */
+
   }]);
 
   return StickyHeader;

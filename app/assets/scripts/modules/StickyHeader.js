@@ -11,7 +11,7 @@ import smoothScroll from 'jquery-smooth-scroll';
     this.createHeaderWaypoint();
     this.pageSections = $(".page-section");
     this.headerLinks = $(".primary-nav a");
-    this.createPageSectionWaypoints();
+    //this.createPageSectionWaypoints();
     this.addSmoothScrolling();
     this.refreshWaypoints();
   }
@@ -41,10 +41,11 @@ import smoothScroll from 'jquery-smooth-scroll';
    });
   }
 
-  createPageSectionWaypoints() {
+  /*createPageSectionWaypoints() {
     var that = this;
     this.pageSections.each(function() {
       var currentPageSection = this;
+
       new Waypoint({
         element: currentPageSection,
         handler: function(direction) {
@@ -68,8 +69,19 @@ import smoothScroll from 'jquery-smooth-scroll';
         },
         offset: "-40%"
       });
+
+      new Waypoint({
+        element: currentPageSection,
+        handler: function(scrollTop) {
+          if (scrollTop == "0") {
+            var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
+            that.headerLinks.removeClass("is-current-link");
+          }
+        }
+      });
+
     });
-  }
+  } */
 
 }
 
