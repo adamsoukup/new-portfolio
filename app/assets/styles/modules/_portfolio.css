@@ -1,0 +1,87 @@
+/*Portfolio*/
+
+.thumb-container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	overflow: hidden;
+
+
+}
+
+.thumbUnit {
+	width: 24.2%;
+	border-radius: 3px;
+	background-color: #fff;
+	display: block;
+	float: left;
+	position: relative;
+	padding-top: 17%;
+	margin: 2px;
+	background-image: url('../../assets/images/cme-content/cme-image-01.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	cursor: pointer;
+
+}
+
+
+.thumbOverlay {
+	position: absolute;
+	text-align: center;
+	background: rgba(38,82,107,0.75);
+	top: 100%;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	height: 100%;
+	transition: top 0.4s;
+}
+
+
+.thumbUnit:hover .thumbOverlay {
+	top: 125px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	height: 100%;
+}
+
+.thumbOverlay strong{
+	font-weight: 300;
+	display: block;
+	padding: 9px;
+	color:#fff;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 640px) {
+
+	.thumbContainer {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+	.thumbUnit{
+		width: 100%;
+		margin: 2px auto;
+		padding-top: 65%;
+		float: left;
+	}
+
+
+	.thumbUnit:hover .thumbOverlay {
+	top: 220px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	height: 100%;
+}
+
+}

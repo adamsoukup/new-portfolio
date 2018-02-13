@@ -3,7 +3,7 @@
 
   &--pull-right {
     @mixin atMedium {
-      float: right;
+      text-align: center;
     }
   }
 
@@ -17,29 +17,36 @@
     list-style: none;
     display: inline-block;
     padding-right: 10px;
+    padding-bottom: 5px;
+
     @mixin atMedium {
       padding-right: 20px;
-      float: left;
-      display:block;
+      display:inline-block;
     }
   }
 
   li:last-child {
-    padding-right: 0;
+    padding-right: 0px;
+
     @mixin atMedium {
-      padding-right: 20px;
+      padding-right: 0px;
     }
   }
 
   a {
     color: #FFF;
-    font-weight: 300;
+    font-size: .7rem;
+    font-weight: 200;
     text-decoration: none;
     text-shadow: 2px 1px 5px #000;
     display: block;
-    padding: 12px 0;
+    padding: 10px 0;
+    background-color: $mainBlue;
+    padding: 9px 10px;
 
     @mixin atMedium {
+      font-size: 1rem;
+      background-color: transparent;
 
       &.is-current-link {
         color: orange;
