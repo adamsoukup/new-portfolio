@@ -36,14 +36,14 @@
 	margin: 0px auto 50px;
 }
 
+
 .bigLink {
-	display: block;
-  text-align: center;
+	display: inline-block;
 	font-size: 50px;
 	font-weight: 300;
 	color: #03111c;
 	text-decoration: none;
-	margin-bottom: 36px;
+	margin-bottom: 34px;
   transition: color 200ms ease-in-out;
 }
 

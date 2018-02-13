@@ -5,6 +5,10 @@
     padding: 3rem 0;
   }
 
+  &--centered {
+    text-align: center;
+  }
+
   &--no-b-padding-until-medium {
     padding-bottom: 0;
 
