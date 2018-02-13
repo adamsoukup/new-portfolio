@@ -1,0 +1,72 @@
+/*Contact*/
+
+.socialLinks {
+  padding-top: 30px;
+	max-width: 300px;
+	margin: 0 auto 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.socialLinks a {
+	display: block;
+	background-color: #ccc;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	border: 3px solid #03111c;
+	border-radius: 50%;
+	transition: all .2s ease-in-out;
+}
+
+.socialLinks a:hover {
+	transform: scale(1.05);
+}
+
+.socialLinks a:focus {
+	outline: 0;
+	text-decoration: none;
+}
+
+.bar {
+	width: 250px;
+	height: 0px;
+	border: 1px solid #03111c;
+	border-radius: 20px;
+	margin: 0px auto 50px;
+}
+
+.bigLink {
+	display: block;
+  text-align: center;
+	font-size: 50px;
+	font-weight: 300;
+	color: #03111c;
+	text-decoration: none;
+	margin-bottom: 36px;
+  transition: color 200ms ease-in-out;
+}
+
+.bigLink:hover {
+	color: $mainOrange;
+}
+
+.bigLink:focus {
+	outline: 0;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+.bigLink {
+	font-size: 30px;
+	font-weight:300;
+}
+
+.bigLink:hover {
+	font-size: 30px;
+	font-weight:300;
+}
+
+}

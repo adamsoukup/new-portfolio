@@ -4,9 +4,12 @@
 	max-width: 960px;
 	margin: 0 auto;
 	padding-top: 10px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 	overflow: hidden;
 
+	@mixin atSmall {
+    padding-top: 25px;
+  }
 
 }
 
@@ -61,9 +64,10 @@
 @media screen and (max-width: 640px) {
 
 	.thumbContainer {
-	width: 350px;
-	display: flex;
-	flex-direction: column;
+		padding-top: 10px;
+	  width: 350px;
+	  display: flex;
+	  flex-direction: column;
 
 
 }
@@ -77,11 +81,11 @@
 
 
 	.thumbUnit:hover .thumbOverlay {
-	top: 220px;
-	right: 0px;
-	left: 0px;
-	bottom: 0px;
-	height: 100%;
+	  top: 200px;
+	  right: 0px;
+	  left: 0px;
+	  bottom: 0px;
+	  height: 100%;
 }
 
 }

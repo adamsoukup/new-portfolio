@@ -1453,11 +1453,18 @@ Instead edit gulp/templates/sprite */
 	max-width: 960px;
 	margin: 0 auto;
 	padding-top: 10px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 	overflow: hidden;
 
+}
+
+@media (min-width: 530px) {
+
+.thumb-container {
+    padding-top: 25px
 
 }
+  }
 
 .thumbUnit {
 	width: 24.2%;
@@ -1509,14 +1516,15 @@ Instead edit gulp/templates/sprite */
 @media screen and (max-width: 640px) {
 
 	.thumbContainer {
-	width: 350px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+		padding-top: 10px;
+	  width: 350px;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	      -ms-flex-direction: column;
+	          flex-direction: column;
 
 
 }
@@ -1530,11 +1538,89 @@ Instead edit gulp/templates/sprite */
 
 
 	.thumbUnit:hover .thumbOverlay {
-	top: 220px;
-	right: 0px;
-	left: 0px;
-	bottom: 0px;
-	height: 100%;
+	  top: 200px;
+	  right: 0px;
+	  left: 0px;
+	  bottom: 0px;
+	  height: 100%;
+}
+
+}
+
+/*Contact*/
+
+.socialLinks {
+  padding-top: 30px;
+	max-width: 300px;
+	margin: 0 auto 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+.socialLinks a {
+	display: block;
+	background-color: #ccc;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	border: 3px solid #03111c;
+	border-radius: 50%;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.socialLinks a:hover {
+	-webkit-transform: scale(1.05);
+	        transform: scale(1.05);
+}
+
+.socialLinks a:focus {
+	outline: 0;
+	text-decoration: none;
+}
+
+.bar {
+	width: 250px;
+	height: 0px;
+	border: 1px solid #03111c;
+	border-radius: 20px;
+	margin: 0px auto 50px;
+}
+
+.bigLink {
+	display: block;
+  text-align: center;
+	font-size: 50px;
+	font-weight: 300;
+	color: #03111c;
+	text-decoration: none;
+	margin-bottom: 36px;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.bigLink:hover {
+	color: #d59541;
+}
+
+.bigLink:focus {
+	outline: 0;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+
+.bigLink {
+	font-size: 30px;
+	font-weight:300;
+}
+
+.bigLink:hover {
+	font-size: 30px;
+	font-weight:300;
 }
 
 }
